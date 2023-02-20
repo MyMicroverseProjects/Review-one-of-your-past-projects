@@ -1,0 +1,225 @@
+html {
+    scroll-behavior: smooth;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+    padding: 0px;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+#header {
+    width: 100vw;
+    display: flex;
+    top: 0;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 5vh;
+    min-height: 50px;
+    background-color: rgb(248, 236, 236, .8);
+    box-shadow: 0 0 15px #00214B;
+    height: 8vh;
+    position: fixed;
+}
+
+#header-img {
+    width: 450px;
+    display: block;
+    margin-right: auto;
+    border: black solid 1px;
+}
+
+#nav-bar {
+    margin-right: 1vw;
+    top: 0;
+    width: 43vw;
+}
+
+.navbBar {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.nav-link {
+    color: #282626;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#header-img {
+    width: 450px;
+    display: block;
+    margin-right: auto;
+    border: black solid 1px;
+}
+
+#nav-bar {
+    margin-right: 1vw;
+    top: 0;
+    width: 43vw;
+}
+
+.navbBar {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.nav-link {
+    color: #282626;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.nav-link a {
+    color: #282626;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    cursor: pointer;
+    font-size: calc(25px + (50 - 25) * ((100vw - 300px) / (1600 - 300)));
+}
+
+#videoElement {
+    display: flex;
+    justify-content: center;
+    margin-top: 25vh;
+}
+
+#video {
+    display: block;
+    /* that element just to pass test */
+}
+
+#formContainer {
+    display: flex;
+    justify-content: center;
+    margin: 5vh;
+}
+
+.sectionHeadline {
+    width: 100%;
+    text-align: center;
+}
+
+#features {
+    display: flex;
+    width: auto;
+    height: 1000px;
+    margin-top: 100px;
+    padding-top: 100px;
+    background-color: #def62d;
+}
+
+#how-it-works {
+    display: flex;
+    width: auto;
+    height: 1000px;
+    margin-top: 100px;
+    padding-top: 100px;
+    background-color: #f62d2d;
+}
+
+#pricing {
+    display: flex;
+    width: auto;
+    height: 1000px;
+    margin-top: 100px;
+    padding-top: 100px;
+    background-color: #2d9ff6;
+}
+
+iframe {
+    width: 747px;
+    height: 420px;
+}
+
+
+
+
+/*****************************                                          ***********/
+/*****************************        @media (max-width: 768px)         ***********/
+/*****************************                                          ***********/
+/*****************************                                          ***********/
+
+@media (max-width: 768px) {
+    #header {
+        display: flex;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 1em 0em;
+    }
+
+    #nav-bar {
+        background-color: rgb(248, 236, 236, .8);
+        width: 100vw;
+    }
+
+    .navbBar {
+        display: flex;
+        /* flex-direction: column; */
+        align-items: center;
+        justify-content: center;
+        column-gap: 5em;
+        margin: 0%;
+        padding: 0px;
+    }
+
+    .navbBar li {
+        margin: 5px;
+    }
+
+    #videoElement {
+        margin-top: 35vh;
+    }
+
+    iframe {
+        width: 315px;
+        height: 178px;
+    }
+
+    .sectionHeadline {
+        margin-top: 200px;
+    }
+}
+
+@media (max-width: 495px) {
+
+    #header {
+        padding-bottom: 4rem;
+    }
+
+    .navbBar {
+        flex-direction: column;
+    }
+
+    iframe {
+        width: 280px;
+        height: 158px;
+    }
+}
+
+/*****************************                                          ***********/
+/*****************************        @media (max-width: 375px)         ***********/
+/*****************************                                          ***********/
+/*****************************                                          ***********/
+
+@media (max-width: 375px) {
+    iframe {
+        width: 280px;
+        height: 158px;
+    }
+}
